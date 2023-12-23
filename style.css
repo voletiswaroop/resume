@@ -45,6 +45,7 @@ ul {
 li {
   margin-bottom: 5px;
   line-height: 26px;
+  font-size: 18px;
 }
 
 .nomargin {
@@ -103,11 +104,12 @@ h1 {
 
 .cv-container .article-body {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .cv-container .article-body h5 {
   margin: -5px 0 12px;
+  font-size: 100%;
 }
 
 .cv-container .article-body h6 {
@@ -119,13 +121,16 @@ h1 {
   margin: 0;
   font-family: "regularBoldFont";
 }
+
 .cv-container a[href] {
   color: #428bca;
 }
+
 .cv-container .user-contact a[href] {
   color: #333;
   font-family: "regularFont";
 }
+
 .cv-container .user-contact a[href] i {
   color: #428bca;
 }
@@ -259,6 +264,7 @@ h1.name {
   width: 1.35em;
   vertical-align: middle;
 }
+
 /* 
 .user-contact li.locality:before {
   content: "\f041";
@@ -285,9 +291,11 @@ h1.name {
   border-top: 1px solid #cccccc;
   padding-top: 1.55em;
 }
+
 .cv-container .sidebar section {
   margin: 0;
 }
+
 .cv-container .main section:first-child,
 .cv-container .sidebar section:first-child {
   border: none;
@@ -318,7 +326,7 @@ h1.name {
 }
 
 .cv-container .competency .competency-bar {
-  margin: 0.5em 0px 0.75em;
+  margin: 0.3em 0px 0.6em;
   width: 100%;
   background-color: white;
   border: 1px solid #cccccc;
@@ -344,8 +352,22 @@ h1.name {
 }
 
 .sidebar .competency {
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   margin: 0;
+  font-size: 16px;
+}
+
+.sidebar .competency .competency{
+  padding-bottom: 0;
+}
+.sidebar .competency ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.sidebar .competency li {
+  margin-bottom: 0;
+  line-height: 24px;
 }
 
 @media print {
