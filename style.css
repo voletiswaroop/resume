@@ -277,9 +277,13 @@ summary {
 } */
 .more-contact a[href] {
   color: #333;
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: baseline;
 }
 .more-contact i {
   color: #428bca;
+  font-size: 15px;
 }
 .cv-container .sidebar section header {
   text-transform: capitalize;
@@ -352,23 +356,21 @@ main {
 .sidebar h3 {
   font-size: 142%;
 }
+.sidebar .competency ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+}
 
 .sidebar .content-body ul ul {
   padding-left: 1em;
 }
 
 .sidebar .competency {
-  padding-bottom: 12px;
-  margin: 0;
   font-size: 16px;
 }
 
 .sidebar .competency .competency {
   padding-bottom: 0;
-}
-.sidebar .competency ul {
-  list-style-type: disc;
-  list-style-position: inside;
 }
 
 .sidebar .competency li {
