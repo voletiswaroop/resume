@@ -268,15 +268,9 @@ summary {
   position: relative;
 }
 
-/* .user-contact li:after {
-  content: " | ";
-  font-size: 22px;
-  position: absolute;
-  right: -5px;
-  color: #428bca;
-} */
 .more-contact a[href] {
-  color: #333;
+  font-family: regularFont;
+  color: #555;
   margin-right: 10px;
   display: inline-flex;
   align-items: baseline;
