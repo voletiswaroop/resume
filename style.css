@@ -135,12 +135,6 @@ h1 {
   color: #428bca;
 }
 
-.cv-container .cv-content:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 @page {
   size: A4 portrait;
 }
@@ -226,11 +220,25 @@ h1.name {
   border-bottom: 2px solid black;
   width: 3em;
 }
-
+.summary {
+  padding-bottom: 1.5em;
+}
+.summary h5 {
+  font-size: 20px;
+}
+summary {
+  margin-top: 20px;
+  color: #444;
+  font-size: 18px;
+}
 .header-bar {
-  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  margin: 0 !important;
+  margin-bottom: 2em;
+  overflow: hidden;
+  border-bottom: 2px solid #428bca;
+  padding-bottom: 20px;
 }
 
 .header-bar .title {
@@ -249,35 +257,30 @@ h1.name {
   margin-left: 10px;
   margin-top: 7px;
 }
-
+.user-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
 .user-contact li {
-  margin-bottom: 0.5em;
-}
-
-.user-contact li:before {
-  font-family: FontAwesome;
-  opacity: 0.25;
-  font-size: 100%;
-  margin-right: 0.25em;
+  margin-bottom: 0;
   display: inline-block;
-  text-align: center;
-  width: 1.35em;
-  vertical-align: middle;
+  position: relative;
 }
 
-/* 
-.user-contact li.locality:before {
-  content: "\f041";
-}
-
-.user-contact li.phone:before {
-  content: "\f095";
-}
-
-.user-contact li.email:before {
-  content: "\f003";
+/* .user-contact li:after {
+  content: " | ";
+  font-size: 22px;
+  position: absolute;
+  right: -5px;
+  color: #428bca;
 } */
-
+.more-contact a[href] {
+  color: #333;
+}
+.more-contact i {
+  color: #428bca;
+}
 .cv-container .sidebar section header {
   text-transform: capitalize;
 }
@@ -285,7 +288,9 @@ h1.name {
 .cv-container article {
   margin-bottom: 18px;
 }
-
+main {
+  overflow: hidden;
+}
 .cv-container .main section,
 .cv-container .sidebar section {
   border-top: 1px solid #cccccc;
@@ -314,6 +319,7 @@ h1.name {
   width: 30%;
   padding-right: 1.5em;
   float: left;
+  padding-top: 10px;
 }
 
 .cv-container .profile-body .main {
@@ -322,10 +328,10 @@ h1.name {
   padding-left: 1.5em;
   float: left;
   border-left: 1px solid #cccccc;
-  margin-top: -7px;
+  padding-top: 10px;
 }
 
-.cv-container .competency .competency-bar {
+.competency-bar {
   margin: 0.3em 0px 0.6em;
   width: 100%;
   background-color: white;
@@ -335,7 +341,7 @@ h1.name {
   height: 5px;
 }
 
-.cv-container .competency .competency-level {
+.competency-level {
   background-color: #cccccc;
   background-color: #428bca;
   border-radius: 1px;
@@ -357,7 +363,7 @@ h1.name {
   font-size: 16px;
 }
 
-.sidebar .competency .competency{
+.sidebar .competency .competency {
   padding-bottom: 0;
 }
 .sidebar .competency ul {
