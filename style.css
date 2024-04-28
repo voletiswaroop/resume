@@ -45,7 +45,9 @@ a {
 ul {
   list-style-type: none;
 }
-
+li::marker {
+  color: var(--primary-brown-color);
+}
 li {
   margin-bottom: 5px;
   line-height: 26px;
