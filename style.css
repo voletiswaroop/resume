@@ -63,8 +63,8 @@ h1 {
 
 .cv-wrapper .cv-container,
 .cv-wrapper .cv-content {
-  width: 100%;
-  max-width: 1240px;
+  width: 1080px;
+  max-width: 1080px;
 }
 
 .content-body ul {
