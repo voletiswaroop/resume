@@ -15,7 +15,12 @@
   src: url("fonts/Calibri-Bold.TTF");
   font-style: normal;
 }
-
+:root {
+  --primary-blue-color: #428bca;
+  --primary-brown-color: #a71b24;
+  --primary-font-color: #333;
+  --border-color: #ccc;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -35,7 +40,6 @@ html {
 
 a {
   text-decoration: none;
-  font-family: "regularBoldFont";
 }
 
 ul {
@@ -91,9 +95,8 @@ h1 {
   font-family: regularFont;
   line-height: 26px;
   font-size: 20px;
-  background: white;
   padding: 0px;
-  color: #333;
+  color: var(--primary-font-color);
 }
 
 .cv-container section {
@@ -126,19 +129,20 @@ h1 {
 .cv-container .sidebar .article-body h6 {
   margin: 0;
   font-family: "Varela Round";
+  color: var(--primary-brown-color);
 }
 
 .cv-container a[href] {
-  color: #428bca;
+  color: inherit;
 }
 
 .cv-container .user-contact a[href] {
-  color: #333;
+  color: var(--primary-font-color);
   font-family: "regularFont";
 }
 
 .cv-container .user-contact a[href] i {
-  color: #428bca;
+  color: var(--primary-brown-color);
 }
 
 @page {
@@ -148,7 +152,7 @@ h1 {
 .cv-container h3,
 .cv-container h1 {
   font-weight: 400;
-  color: #333;
+  color: var(--primary-font-color);
   font-size: 330%;
   font-family: Elegance, sans-serif;
   margin-bottom: 0;
@@ -235,7 +239,7 @@ summary {
   width: 100%;
   margin-bottom: 2em;
   overflow: hidden;
-  border-bottom: 2px solid #428bca;
+  border-bottom: 2px solid var(--primary-brown-color);
   padding-bottom: 20px;
 }
 
@@ -250,7 +254,7 @@ summary {
   width: 400px;
   float: right;
   display: block;
-  background: #428bca;
+  background: var(--primary-brown-color);
   height: 12px;
   margin-left: 10px;
   margin-top: 7px;
@@ -274,7 +278,7 @@ summary {
   align-items: baseline;
 }
 .more-contact i {
-  color: #428bca;
+  color: var(--primary-brown-color);
   font-size: 15px;
 }
 .cv-container .sidebar section header {
@@ -289,7 +293,7 @@ main {
 }
 .cv-container .main section,
 .cv-container .sidebar section {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid var(--border-color);
   padding-top: 1.55em;
 }
 
@@ -323,7 +327,7 @@ main {
   width: 70%;
   padding-left: 1.5em;
   float: left;
-  border-left: 1px solid #cccccc;
+  border-left: 1px solid var(--border-color);
   padding-top: 10px;
 }
 
