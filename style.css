@@ -63,8 +63,8 @@ h1 {
 
 .cv-wrapper .cv-container,
 .cv-wrapper .cv-content {
-  width: 1080px;
-  max-width: 1080px;
+  width: 100%;
+  max-width: 1240px;
 }
 
 .content-body ul {
@@ -86,9 +86,14 @@ h1 {
 .cv-container {
   display: block;
   margin: auto;
-  padding: 50px 6.5%;
   max-width: 1080px;
   background: white;
+  font-family: regularFont;
+  line-height: 26px;
+  font-size: 20px;
+  background: white;
+  padding: 0px;
+  color: #333;
 }
 
 .cv-container section {
@@ -109,7 +114,8 @@ h1 {
 
 .cv-container .article-body h5 {
   margin: -5px 0 12px;
-  font-size: 100%;
+  font-size: 95%;
+  font-family: "Poppins", sans-serif;
 }
 
 .cv-container .article-body h6 {
@@ -119,7 +125,7 @@ h1 {
 
 .cv-container .sidebar .article-body h6 {
   margin: 0;
-  font-family: "regularBoldFont";
+  font-family: "Varela Round";
 }
 
 .cv-container a[href] {
@@ -167,7 +173,8 @@ h1 {
 }
 
 .cv-container h4 {
-  font-weight: 600;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
 }
 
 .cv-container h5 {
@@ -178,15 +185,6 @@ h1 {
 .cv-container h6 {
   font-weight: 300;
   line-height: 1.5em;
-}
-
-.cv-container {
-  font-family: regularFont;
-  line-height: 26px;
-  font-size: 20px;
-  background: white;
-  padding: 0px;
-  color: #333;
 }
 
 .cv-container h1,
@@ -330,23 +328,8 @@ main {
 }
 
 .competency-bar {
-  margin: 0.3em 0px 0.6em;
-  width: 100%;
-  background-color: white;
-  border: 1px solid #cccccc;
-  border: 1px solid #428bca;
-  border-radius: 2px;
   height: 5px;
 }
-
-.competency-level {
-  background-color: #cccccc;
-  background-color: #428bca;
-  border-radius: 1px;
-  height: 100%;
-  width: 80%;
-}
-
 .sidebar h3 {
   font-size: 142%;
 }
