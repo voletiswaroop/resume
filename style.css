@@ -361,11 +361,13 @@ main {
   margin-bottom: 0;
   line-height: 24px;
 }
-
+.cv-container .profile-body { 
+  max-width: 98%;
+}
 @media print {
   
   .cv-container .profile-body { 
-    max-width: 98%;
+    width: 98%;
   }
 /* 
   .cv-container .profile-body .sidebar {
