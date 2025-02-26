@@ -292,6 +292,7 @@ summary {
 }
 main {
   overflow: hidden;
+  display: flex;
 }
 .cv-container .main section,
 .cv-container .sidebar section {
