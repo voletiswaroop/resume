@@ -363,17 +363,18 @@ main {
 }
 
 @media print {
-  .cv-container .profile-body {
-    display: block;
+  
+  .cv-container .profile-body { 
+    max-width: 98%;
   }
-
+/* 
   .cv-container .profile-body .sidebar {
     flex: 0 0 30%;
   }
 
   .cv-container .profile-body .main {
     flex: 0 0 70%;
-  }
+  } */
 }
 
 @media screen {
